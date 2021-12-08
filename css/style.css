@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+.blokFaFa {
+    font-size: 50px;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+#kontaktLevo {
+    font-size: 27px;
+}
+
+#kontaktLevo i {
+    color: red;
+    margin-right: 10px;
+}
+
+#lista2 {
+    font-size: 20px;
+}
+
+#lista2 i {
+    margin-right: 10px;
+}
+
+#lista3 {
+    font-size: 23px;
+}
+
+.sredina {
+    margin: 0px auto;
+    width: 80%;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#headerGore .sredina, #headerDole .sredina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+#headerGore {
+    background-color: black;
+    color: white;
+}
+
+#prijava {
+    padding: 5px 0px;
+}
+
+#prijava a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#prijava a:hover {
+    font-weight: bold;
+}
+
+#muzika audio {
+    max-width: 250px;
+    height: 30px;
+}
+
+#search-box {
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+}
+
+#search-box:hover>#search-txt {
+    width: 180px;
+    padding: 0px 6px;
+}
+
+#search-box:hover>#search-btn {
+    background: white;
+}
+
+#search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+#search-txt::placeholder {
+    color: #fff;
+}
+
+#headerDole {
+    background-color: white;
+}
+
+#logo, #logo img {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 8px;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+    font-weight: bold;
+    transition: all 0.4s linear;
+}
+
+.active {
+    color: red;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+#pozadinskaSlika {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pozadinska.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+#pozadinskiTekst {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pozadinskiTekst p {
+    font-size: 24px;
+    margin: 45px 0;
+}
+
+#pozadinskiTekst h1 {
+    font-size: 60px;
+    text-shadow: 1px 2px rgb(216, 213, 213);
+}
+
+#pozadinskiTekst .btn {
+    display: block;
+    background-color: red;
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    padding: 12px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+#oSeriji {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.naslov {
+    border-bottom: 3px solid red;
+    width: 190px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#oSeriji p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.slikaRed {
+    width: 100%;
+    height: 400px;
+}
+
+.jedan {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slider/grayBg.jpg) no-repeat fixed center/cover;
+}
+
+#sadrzaj {
+    width: 100%;
+}
+
+#sadrzaj .sredina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+
+.blok {
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blok:last-child {
+    margin-right: 0px;
+}
+
+.blokFaFa {
+    width: 90px;
+    height: 90px;
+    margin: 0px auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.blokFaFa:hover {
+    border: 2px solid red;
+    color: red;
+    transition: 0.4s;
+}
+
+.blokTekst {
+    padding-top: 20px;
+}
+
+#autor {
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+#autor .slika img {
+    width: 280px;
+    height: 300px;
+    border-radius: 10px 45px 10px;
+    display: block;
+}
+
+#autor .opis {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+#galerija {
+    width: 100%;
+    margin: 80px 0;
+    display: inline-block;
+}
+
+.galerijaBlok {
+    width: 25%;
+    float: left;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.galerijaBlok img {
+    width: 100%;
+    height: 250px;
+}
+
+#glumci {
+    width: 100%;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.glumac img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 50%;
+}
+
+#kontakt {
+    padding: 40px 0px;
+}
+
+#kontakt .sredina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#kontaktLevo p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#kontaktDesno img {
+    border-radius: 10px;
+}
+
+#futerSlika {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.849)), url('../img/slider/selfie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.futerBlok {
+    padding-top: 50px;
+    width: 20%;
+}
+
+#lista1 li, #lista2 li {
+    border-bottom: 1px solid white;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#lista1 li a, #lista2 li a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: white;
+}
+
+#lista3 a {
+    color: #fff;
+}
+
+#lista1 li a:hover, #lista3 a:hover {
+    color: #e84118;
+    transition: 0.4s;
+}
+
+.futerBlok form input {
+    padding: 5px;
+    display: block;
+    outline: none;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#lista2 {
+    color: white;
+}
+
+#lista3 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#lista3 li {
+    display: inline-block;
+    transition: 0.4s;
+}
+
+#futerDole {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0px;
+}
+
+#futerDole p {
+    text-align: center;
+    color: white;
+}
+
+#futerDole a {
+    text-decoration: none;
+    color: white;
+}
+
+#forma-prijava input {
+    padding: 8px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+#forma-prijava input:focus {
+    box-shadow: 2px 1px 8px 10px #888888;
+}
+
+#btnPrijava { 
+    background: #e84118;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.7s ease-in-out;
+    color: #fff;
+}
+
+#btnPrijava:hover {
+    background: #000;
+}
